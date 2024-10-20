@@ -1,0 +1,70 @@
+
+.modal {
+    position: fixed; 
+    top: -50px;
+    right: 40px;
+    width: 100%;
+    height: 100%;
+   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    background-image: url(./images/mod2.png); 
+    padding: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat; 
+  background-size: cover;
+    width: 300px; 
+    height: 150px;
+    overflow-y: auto; 
+    position: relative;
+    transition: transform 0.3s ease;
+    animation: slideDown 0.3s ease-in-out; 
+  }
+  
+  
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .close {
+    color: #070707; /* Цвет текста для кнопки закрытия */
+    float: right; /* Помещаем кнопку закрытия вправо */
+    font-size: 28px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    margin-top: -19px;
+    margin-right: -12px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(199, 21, 21); /* Цвет текста при наведении */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer; /* Указатель курсора */
+  }
+  
+  .modal p {
+    margin-top: 40px ; /* Отступы для текста внутри модального окна */
+    margin-left: 70px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+
+  }
+
+  .btn-ok{
+width: 70px;
+height: 30px;
+margin-left: 130px;
+cursor: pointer;
+transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .btn-ok:hover{
+    transform: scale(1.1); 
+
+  }

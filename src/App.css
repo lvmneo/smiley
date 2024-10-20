@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+
+body{
+  font-family: 'Outfit' ,sans-serif;
+  background-color: #f0f0f0;
+ 
+  margin-top: 100px;
+  margin-left: 650px;
+ 
+}
+.panel-z{
+
+  height: 30px;
+  background-repeat: no-repeat; 
+background-image: url(./images/panz.png);
+background-size: cover;
+margin-top: 160px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+  background-image: url(./images/window.jpg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  width: 700px;
+  height: 700px;
+border-radius: 20px;
+overflow: hidden;
+ background-size: cover; /* Масштабируем изображение так, чтобы покрыть весь контейнер */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.music-button{
+  margin-left:60px;
+cursor: pointer;
+}
+.smile-container {
+  display: flex; /* Используем Flexbox */
+  flex-wrap: wrap; /* Позволяет смайлам переходить на новую строку */
+  justify-content: center; /* Центрируем смайлики по горизонтали */
+  padding: 20px; /* Внутренний отступ для контейнера */
+  background-color: #d9d9d9; /* Цвет фона контейнера */
+  border-radius: 10px; /* Закругление углов контейнера */
+  width: 320px;
+  height: 280px;
+  background-image: url(./images/U.png);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+
+ margin-top: 150px;
+ margin-left: 280px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.smile {
+  cursor: pointer;
+  width: 50px; /* Ширина смайлов */
+  height: 48px; /* Высота смайлов */
+  margin: 5px; /* Промежуток между смайлами */
+  margin-top: 20px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smile:hover{
+  transform: scale(1.1); 
 }
